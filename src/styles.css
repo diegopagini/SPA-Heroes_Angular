@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 /*Animaciones*/
+body {
+  padding-bottom: 50px;
+}
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;

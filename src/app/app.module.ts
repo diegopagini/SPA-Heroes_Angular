@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/shared/home/home.component';
 import { AboutComponent } from './components/shared/about/about.component';
 import { HeroesComponent } from './components/shared/heroes/heroes.component';
+import { HeroesService } from './servicios/heroes.service';
 
 @NgModule({
   declarations: [
@@ -14,13 +15,10 @@ import { HeroesComponent } from './components/shared/heroes/heroes.component';
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    HeroesComponent
+    HeroesComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule],
+  providers: [HeroesService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
