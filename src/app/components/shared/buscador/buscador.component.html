@@ -13,6 +13,6 @@
 
 <app-heroe-tarjeta
   [heroe]="foo"
-  [index]="i"
-  *ngFor="let foo of heroes; let i = index"
+  [index]="foo.idx"
+  *ngFor="let foo of heroes"
 ></app-heroe-tarjeta>
