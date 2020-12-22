@@ -31,3 +31,15 @@ body {
 .fadeIn {
   animation-name: fadeIn;
 }
+
+.card-columns {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  max-width: 300px;
+  text-align: center;
+}

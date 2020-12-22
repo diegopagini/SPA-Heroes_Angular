@@ -10,6 +10,7 @@ import { HeroesComponent } from './components/shared/heroes/heroes.component';
 import { HeroesService } from './servicios/heroes.service';
 import { HeroeComponent } from './components/shared/heroe/heroe.component';
 import { BuscadorComponent } from './components/shared/buscador/buscador.component';
+import { HeroeTarjetaComponent } from './components/shared/heroe-tarjeta/heroe-tarjeta.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { BuscadorComponent } from './components/shared/buscador/buscador.compone
     HeroesComponent,
     HeroeComponent,
     BuscadorComponent,
+    HeroeTarjetaComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [HeroesService],

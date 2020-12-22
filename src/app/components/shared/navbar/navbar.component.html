@@ -43,7 +43,7 @@
           class="form-control me-2"
           type="text"
           placeholder="Buscar Heroe"
-          (keyup.enter)="buscarHeroe(buscarTexto.value)"
+          (keydown.enter)="buscarHeroe(buscarTexto.value)"
           #buscarTexto
         />
         <button
