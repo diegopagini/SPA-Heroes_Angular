@@ -2,19 +2,31 @@
 <hr />
 
 <div class="card-columns">
-  <div class="card">
-    <img src="assets/img/aquaman.png" class="card-img-top" alt="..." />
+  <div
+    class="card animated fadeIn fast"
+    *ngFor="let heroes of heroes; let i = index"
+  >
+    <img
+      src="{{ heroes.img }}"
+      class="card-img-top"
+      alt="{{ heroes.nombre }}"
+    />
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
+      <h5 class="card-title">{{ heroes.nombre }}</h5>
       <p class="card-text">
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action.
+        {{ heroes.bio }}
       </p>
       <p class="card-text">
-        <small class="text-muted">Last updated 3 mins ago</small>
+        <small class="text-muted"
+          >{{ heroes.aparicion | date }} | {{ heroes.casa }}</small
+        >
       </p>
-      <button type="button" class="btn btn-primary btn-block">Ver mas</button>
+      <div class="d-grid gap-2">
+        <button (click)="verHeroe(i)" type="button" class="btn btn-primary">
+          Ver mas...
+        </button>
+      </div>
+      <!-- <a [routerLink]="['/heroe,i']" class="btn btn-primary">ver mas link...</a> -->
     </div>
   </div>
 </div>
