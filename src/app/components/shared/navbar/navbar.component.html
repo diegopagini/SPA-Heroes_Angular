@@ -41,11 +41,18 @@
       <form class="d-flex">
         <input
           class="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
+          type="text"
+          placeholder="Buscar Heroe"
+          (keyup.enter)="buscarHeroe(buscarTexto.value)"
+          #buscarTexto
         />
-        <button class="btn btn-outline-primary" type="submit">Search</button>
+        <button
+          class="btn btn-outline-primary"
+          type="button"
+          (click)="buscarHeroe(buscarTexto.value)"
+        >
+          Buscar
+        </button>
       </form>
     </div>
   </div>
